@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decor - Furniture Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="main.html">
+            <img src="Assets/logo-regular.png" alt="Furniture Shop" class="logo-img">
+          </a>
+          
+          <div class="d-flex align-items-center order-lg-3">
+            <button class="cart-btn me-3">
+              <i class="fas fa-shopping-basket"></i>
+              <span class="cart-count">0</span>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          
+          <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+            <ul class="navbar-nav mx-lg-auto d-flex align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="shopAll.html">SHOP ALL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="decor.html">DECOR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="office.html">OFFICE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="living_room.html">LIVING ROOM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bedroom.html">BEDROOM</a>
+              </li>
+              <li class="nav-item">
+                <button class="search-btn ms-3" id="searchBtn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Full Width Search Bar -->
+      <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            id="searchInput"
+            placeholder="Search..."
+            autocomplete="off"
+          />
+          <button class="search-close" id="searchClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="container">
+        <div class="main-content-wrapper">
+          <!-- Breadcrumb -->
+         <div class="breadcrumb">
+          <span>
+          <a href="main.html" class="breadcrumb-link">Home</a
+          >
+         <span class="breadcrumb-separator">/</span
+          ><span class="breadcrumb-current">Decor</span>
+        </div>
+
+          <!-- Shop Header -->
+          <div class="shop-header">
+            <div class="shop-title">
+              <h1>DECOR</h1>
+              <div class="shop-info">
+                <p class="results-count">Showing 1-4 of 16 results</p>
+                <div class="sort-dropdown">
+                  <div class="custom-select" id="customSelect">
+                    <div class="select-selected">Default sorting</div>
+                    <div class="select-items select-hide">
+                      <div data-value="default" class="same-as-selected">
+                        Default sorting
+                      </div>
+                      <div data-value="popularity">Sort by popularity</div>
+                      <div data-value="rating">Sort by average rating</div>
+                      <div data-value="latest">Sort by latest</div>
+                      <div data-value="price-low">
+                        Sort by price: low to high
+                      </div>
+                      <div data-value="price-high">
+                        Sort by price: high to low
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded here -->
+          </div>
+
+          <!-- Load More Button -->
+          <div class="load-more-container">
+            <button class="load-more-btn" id="loadMoreBtn">
+              Load More Products
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-section logo-section">
+           <a href="main.html">
+          <img src="Assets/logo-regular.png" alt="Furniture Shop">
+          </a>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section">
+          <h3>LINKS</h3>
+          <ul>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="footer-section">
+          <h3>CATEGORIES</h3>
+          <ul>
+            <li><a href="bedroom.html">Bedroom (6)</a></li>
+            <li><a href="decor.html">Decor (9)</a></li>
+            <li><a href="living_room.html">Living Room (6)</a></li>
+            <li><a href="office.html">Office (11)</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe Section -->
+        <div class="footer-section subscribe-section">
+          <h3>SUBSCRIBE</h3>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email address...">
+            <button type="submit">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>Copyright © 2025 Furniture Shop | Powered by Furniture Shop</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="close-cart" id="closeCart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be displayed here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <strong>Total: $<span id="cartTotal">0.00</span></strong>
+        </div>
+        <button class="checkout-btn">
+          Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

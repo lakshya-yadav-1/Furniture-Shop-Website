@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Shop - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main-page.css" />
+    
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .cart-count {
+        color: black !important;
+      }
+    </style>
+  </head>
+  <body class="main-page" >
+    <!-- Header with Transparent Background -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="main.html">
+            <img src="Assets/logo-regular.png" alt="Furniture Shop" class="logo-img">
+          </a>
+          
+          <div class="d-flex align-items-center order-lg-3 ">
+            <button class="cart-btn me-3">
+              <i class="fas fa-shopping-basket"></i>
+              <span class="cart-count">0</span>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          
+          <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+            <ul class="navbar-nav mx-lg-auto d-flex align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link " href="shopAll.html">SHOP ALL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="decor.html">DECOR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="office.html">OFFICE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="living_room.html">LIVING ROOM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bedroom.html">BEDROOM</a>
+              </li>
+              <li class="nav-item">
+                <button class="search-btn ms-3" id="searchBtn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Full Width Search Bar -->
+      <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            id="searchInput"
+            placeholder="Search..."
+            autocomplete="off"
+          />
+          <button class="search-close" id="searchClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </header>
+
+    <div class="background">
+    <!-- Hero Section -->
+    <section class="hero-section ">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-subtitle">BLACK FRIDAY IN JULY</p>
+          <h1 class="hero-title">UP TO 50% OFF</h1>
+          <p class="hero-description">HUNDREDS OF STYLES AVAILABLE</p>
+          <a href="main.html" class="hero-cta">SHOP NOW</a>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- Logo Carousel Section -->
+    <section class="logo-carousel-section">
+      <div class="logo-carousel-container">
+        <div class="logo-carousel" id="logoCarousel">
+          <div class="logo-item">
+            <img src="MainAssets/logo-001.png" alt="Logo 1" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-002.png" alt="Logo 2" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-003.png" alt="Logo 3" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-004.png" alt="Logo 4" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-005.png" alt="Logo 5" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-006.png" alt="Logo 6" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-007.png" alt="Logo 7" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-008.png" alt="Logo 8" />
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="logo-item">
+            <img src="MainAssets/logo-001.png" alt="Logo 1" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-002.png" alt="Logo 2" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-003.png" alt="Logo 3" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-004.png" alt="Logo 4" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-005.png" alt="Logo 5" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-006.png" alt="Logo 6" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-007.png" alt="Logo 7" />
+          </div>
+          <div class="logo-item">
+            <img src="MainAssets/logo-008.png" alt="Logo 8" />
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+          <span class="dot" data-slide="4"></span>
+          <span class="dot" data-slide="5"></span>
+          <span class="dot" data-slide="6"></span>
+          <span class="dot" data-slide="7"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-category-section">
+      <div class="category-container">
+        <div class="category-subtitle">
+          <p>SHOP BY CATEGORY</p>
+        </div>
+        <div class="category-title">
+          <h2>SHOP BY CATEGORY</h2>
+        </div>
+        <div class="line"></div>
+
+        <div class="category-grid">
+          <a href="bedroom.html">
+            <div class="category-card">
+              <div class="category-icon">
+                <img src="MainAssets/cat-1-300x300.jpg" alt="Bedroom" />
+              </div>
+              <div class="category-info">
+                <h3 class="category-name">BEDROOM</h3>
+                <p class="category-count">6 PRODUCTS</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="bedroom.html">
+            <div class="category-card">
+              <div class="category-icon">
+                <img src="MainAssets/cat-4-300x300.jpg" alt="Decor" />
+              </div>
+              <div class="category-info">
+                <h3 class="category-name">DECOR</h3>
+                <p class="category-count">9 PRODUCTS</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="living_room.html">
+            <div class="category-card">
+              <div class="category-icon">
+                <img src="MainAssets/cat-3-300x300.jpg" alt="Living Room" />
+              </div>
+
+              <div class="category-info">
+                <h3 class="category-name">LIVING ROOM</h3>
+                <p class="category-count">6 PRODUCTS</p>
+              </div>
+            </div>
+          </a>
+          <a href="office.html">
+            <div class="category-card">
+              <div class="category-icon">
+                <img src="MainAssets/cat-2-300x300.jpg" alt="Office" />
+              </div>
+              <div class="category-info">
+                <h3 class="category-name">OFFICE</h3>
+                <p class="category-count">11 PRODUCTS</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-product-section">
+        <div class="featured-container">
+        <div class="featured-subtitle">
+          <p>SHOP BY CATEGORY</p>
+        </div>
+        <div class="featured-title">
+          <h2>featured products</h2>
+        </div>
+        <div class="line"></div>
+        </div>
+
+          <div class="products-grid" id="productsGrid">
+          <!-- Products will be loaded here -->
+        </div>
+    </section>
+
+     <section class="new-arrivals">
+      <div class="container-fluid
+      ">
+        <div class="row g-0">
+          <div class="col-12 new-left position-relative">
+            <div class="overlay"></div>
+            <div class="left-text">
+              <p class="subtitle">NEW ARRIVALS</p>
+              <h1 class="title">BRAND NEW, MODERN LAMPS COLLECTION</h1>
+              <p class="description">IDEAL FOR OFFICES, BEDROOMS AND ALL IN BETWEEN.</p>
+            </div>
+            <img src="MainAssets/bg-01.jpg" alt="Left" class="w-100 h-100 object-cover">
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+
+<!--  -->
+
+<div class="testimonials" style="background: #fff;  display: block; position: static; clear: both;">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="testimonial-card-responsive">
+          <h4>⭐⭐⭐⭐⭐</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Ut elit tellus, luctus nec ullamcorper mattis.
+          </p>
+          <h6>MARIA OLIVER</h6>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="testimonial-card-responsive">
+          <h4>⭐⭐⭐⭐⭐</h4>
+          <p>
+            Cras vel pellentesque odio, in vestibulum dolor. 
+            In commodo ligula massa, tristique fermentum enim hendrerit faucibus.
+          </p>
+          <h6>MARK JUSTIN</h6>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="testimonial-card-responsive">
+          <h4>⭐⭐⭐⭐⭐</h4>
+          <p>
+            Morbi in leo viverra, elementum risus vitae, commodo lorem. 
+            Quisque a mollis.
+          </p>
+          <h6>JAMIE STOCK</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div style="clear: both; display: block; background: #fff;"></div>
+
+<section class="choose-us" style="display: block !important; position: static !important; float: none !important; clear: both !important; margin-top: 0 !important; background: #fff !important;">
+  
+    <h5>BEST PRODUCTS</h5>
+    <h2>WHY CHOOSE US</h2>
+    <div class="line"></div>
+    
+
+
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Feature 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <div class="feature text-center">
+            <i class="fas fa-truck"></i>
+            <h4>FAST DELIVERY</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <div class="feature text-center">
+            <i class="fas fa-credit-card"></i>
+            <h4>FREE SHIPPING</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <div class="feature text-center">
+            <i class="fas fa-shield-alt"></i>
+            <h4>SECURE CHECKOUT</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <div class="feature text-center">
+            <i class="fas fa-shopping-cart"></i>
+            <h4>EASY RETURNS</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-section logo-section">
+          <a href="main.html">
+          <img src="Assets/logo-regular.png" alt="Furniture Shop">
+          </a>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section">
+          <h3>LINKS</h3>
+          <ul>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories Section -->
+        <div class="footer-section">
+          <h3>CATEGORIES</h3>
+          <ul>
+            <li><a href="bedroom.html">Bedroom (6)</a></li>
+            <li><a href="decor.html">Decor (9)</a></li>
+            <li><a href="living_room.html">Living Room (6)</a></li>
+            <li><a href="office.html">Office (11)</a></li>
+          </ul>
+        </div>
+
+        <!-- Subscribe Section -->
+        <div class="footer-section subscribe-section">
+          <h3>SUBSCRIBE</h3>
+          <div class="subscribe-form">
+            <input type="email" placeholder="Your email address...">
+            <button type="submit">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>Copyright © 2025 Furniture Shop | Powered by Furniture Shop</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-yelp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="close-cart" id="closeCart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be displayed here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <strong>Total: $<span id="cartTotal">0.00</span></strong>
+        </div>
+        <a href="https://websitedemos.net/furniture-shop-04/checkout/">
+        <button class="checkout-btn">Proceed to Checkout</button></a>
+      </div>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Hidden custom select to prevent JS error -->
+    <div class="custom-select" id="customSelect" style="display: none;">
+      <div class="select-selected">Default sorting</div>
+      <div class="select-items select-hide"></div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="logo-carousel.js"></script>
+
+  </body>
+</html>
